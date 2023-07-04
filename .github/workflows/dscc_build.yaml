@@ -1,14 +1,11 @@
 name: DSCC Apps Package Build
-
 on:
   workflow_call:
-
-
 jobs:
   build:
     name: Build DSCC Tarball
 
-    runs-on: [self-hosted, onprem-platform]
+    runs-on: self-hosted
 
     steps:
       - name: Dump Environment Variables for Debugging
