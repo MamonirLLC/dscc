@@ -6,7 +6,9 @@ on:
 
 jobs:
   docker_job:
-    runs-on: docker_160
+    runs-on: 
+      group: Default
+      labels: docker_160
     
     steps:
       - name: Create Directory
