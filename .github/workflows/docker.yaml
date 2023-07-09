@@ -10,4 +10,4 @@ jobs:
     
     steps:
       - name: Create Directory
-        run: mkdir test_docker
+        run: touch test_docker/reet.txt
