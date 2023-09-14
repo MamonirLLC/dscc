@@ -4,7 +4,7 @@ on:
 
 jobs:
   docker_job:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: Create Directory
