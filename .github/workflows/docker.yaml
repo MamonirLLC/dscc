@@ -1,15 +1,12 @@
 name: Docker 
 on:
-  push:
-    branches:
-      - main
+ workflow_call
 
 jobs:
   docker_job:
-    runs-on: docker_160
+    runs-on: ubuntu_latest
     
     steps:
       - name: Create Directory
         run: |
-         touch test_docker/reet.txt
-         echo "test"
+         echo "test tag"
