@@ -22,8 +22,8 @@ jobs:
          echo "test tag"
          
   run_tests:
+    needs: checkout
     runs-on: runner_160_1
-
     steps:
     - uses: actions/checkout@v3
     - name: Run script file
