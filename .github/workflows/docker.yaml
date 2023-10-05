@@ -10,3 +10,14 @@ jobs:
       - name: Create Directory
         run: |
          echo "test tag"
+         
+  run_tests:
+    runs-on: runner_160_1
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run script file
+      run: |
+         chmod +x test.sh  
+         ./test.sh
+      shell: bash
