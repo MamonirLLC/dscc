@@ -5,12 +5,13 @@ on:
 jobs:
 
   checkout:
-    runs-on: ubuntu-latest
+    runs-on: runner_160_1
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
+        repository: MamonirLLC/dscc
         ref: 'Release_test'
         token: ${{secrets.YOUR_PAT_SECRET}}
         
