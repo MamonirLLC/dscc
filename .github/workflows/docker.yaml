@@ -1,13 +1,8 @@
 name: Docker 
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
-  docker_job:
-    runs-on: docker_160
-    
-    steps:
-      - name: Create Directory
-        run: |
-         touch test_docker/reet.txt
-         echo "test"
+ build:
+    name: Build css
+    uses: MamonirLLC/css/.github/workflows/call_test.yaml@GLCP-163280
