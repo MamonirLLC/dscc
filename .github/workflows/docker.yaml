@@ -5,4 +5,4 @@ on:
 jobs:
  build:
     name: Build css
-    uses: MamonirLLC/css/.github/workflows/call_test.yaml@GLCP-163280
+    uses: MamonirLLC/ccs/.github/workflows/call_test.yaml@GLCP-163280
